@@ -1,8 +1,8 @@
 <div class="card hover">
   <div class="card-img" [ngStyle]="{ 'background-image': getUrl() }">
-    <div class="overlay">
+    <div class="overlay" *ngIf="viewLink">
       <div class="overlay-content">
-        <a class="hover" href="#!">View Project</a>
+        <a class="hover" href="{{ viewLink }}">View Project</a>
       </div>
     </div>
   </div>

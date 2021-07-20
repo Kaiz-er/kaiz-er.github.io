@@ -12,6 +12,7 @@ export class ProjectCardComponent implements OnInit {
   @Input() title = '';
   @Input() desc = '';
   @Input() thumbnailImg = '';
+  @Input() viewLink = '';
 
   ngOnInit(): void {
     $('.card')
