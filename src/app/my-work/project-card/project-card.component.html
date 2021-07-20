@@ -1,0 +1,16 @@
+<div class="card hover">
+  <div class="card-img" [ngStyle]="{ 'background-image': getUrl() }">
+    <div class="overlay">
+      <div class="overlay-content">
+        <a class="hover" href="#!">View Project</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-content">
+    <a href="#!">
+      <h2>{{ title }}</h2>
+      <p>{{ desc }}</p>
+    </a>
+  </div>
+</div>

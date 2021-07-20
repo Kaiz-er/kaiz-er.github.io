@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12">
+    <div class="bg-1">
+      <div
+        class="d-md-flex align-items-center h-100 text-center justify-content-center"
+      >
+        <div class="about pt-5 pb-5">PROJECTS</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center">
+  <ng-container *ngFor="let p of projects; let i = index">
+    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+      <app-project-card
+        [title]="projects[i].title"
+        [desc]="projects[i].desc"
+        [thumbnailImg]="projects[i].thumbnailUrl"
+      ></app-project-card>
+    </div>
+  </ng-container>
+</div>
